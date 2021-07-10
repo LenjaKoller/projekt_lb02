@@ -1,0 +1,51 @@
+body {
+    margin: 2em;
+}
+
+main {
+    margin: 2em;
+}
+
+.text-center {
+    padding-top: 3rem; padding-bottom: 3rem;
+}
+
+.card {
+    margin-bottom: 2em;
+}
+
+.btn {
+    margin-top: 3rem; margin-bottom: 3rem;
+}
+
+.btn-outline-dark {
+    margin-top: 3rem; margin-bottom: 3rem;
+}
+
+.card-deck {
+    margin-bottom: 2em;
+}
+
+.text-center {
+    padding-top: 3rem; padding-bottom: 3rem;
+}
+
+.featurette-heading {
+    padding-bottom: 1rem;
+}
+
+.right {
+    margin-left: 1em
+}
+
+.news-right {
+    margin-left: 2em
+}
+
+.left {
+    margin-right: 1em
+}
+
+.news-left {
+    margin-right: 2em
+}
