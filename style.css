@@ -24,6 +24,7 @@ main {
 
 .card-deck {
     margin-bottom: 2em;
+    margin-left: 2em;
 }
 
 .text-center {
@@ -48,4 +49,12 @@ main {
 
 .news-left {
     margin-right: 2em
+}
+
+.produkte {
+    margin: 2em 2em 2em 2em;
+}
+
+.logo {
+    width: 20%;
 }
