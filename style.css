@@ -76,3 +76,15 @@ a:hover {
 .gif {
     width: 100%;
 }
+
+.carousel-indicators .active {
+    background-color: red;
+}
+
+.carousel-indicators {
+    color: #0056b3;
+}
+
+.carousel-indicators li {
+    background-color: rgba(3,45,56,.5);
+}
