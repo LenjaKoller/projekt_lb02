@@ -20,6 +20,12 @@ main {
 
 .btn-outline-dark {
     margin-top: 3rem; margin-bottom: 3rem;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: none;
 }
 
 .card-deck {
@@ -52,9 +58,17 @@ main {
 }
 
 .produkte {
-    margin: 2em 2em 2em 2em;
+    margin: 2em;
 }
 
 .logo {
     width: 20%;
+}
+
+.team {
+    padding-top: 1em;
+}
+
+.karten {
+    margin: 2em;
 }
