@@ -42,7 +42,7 @@ let produkteListe =
             "name": "Equalising Shampoo",
             "size": "500 mL",
             "prise": "49 CHF",
-            "suited": "Fettende Haare, Menschen mit einem aktiven Lebensstil und Menschen, die in einer verschmutzten städtischen Umgebung leben",
+            "suited": "Fettende Haare, Menschen mit einem aktiven Lebensstil und Menschen, die in einer städtischen Umgebung leben",
             "skin": "Aromatisch-holzig, nach Kräutern duftend, frisch",
             "ingredients": "Fenchel, Eukalyptusblatt, Mistelblatt"
         },

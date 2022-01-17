@@ -11,29 +11,32 @@
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
           crossorigin="anonymous">
 </head>
+
 <body style="background-color:#fffef2">
 <div class="container">
-    <div class="jumbotron jumbotron-fluid">
+    <div style="background-color: #fffef2" class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4">Genauere Informationen</h1>
-            <p class="lead">Apprentice manager</p>
+            <h1 class="h1">Genauere Informationen</h1>
+            <p class="lead">zu unseren Produkten</p>
+            <img src="assets/produktinfo.jpg" width="100%">
         </div>
+    </div>
     </div>
 
     <div style="margin-bottom: 3rem"></div>
     <!-- Output student and Lehrbetrieb -->
     <div class="row">
         <div class="col-sm">
-            <div class="card" style="width: 18rem;">
-                <div class="card-header">Produktinformation</div>
+            <div class="card bg-dark mb-3" style="width: 18rem;">
+                <div class="card-header text-white">Produktinformation</div>
                 <ul class="list-group list-group-flush">
                     <li id="product" class="list-group-item">?</li>
                 </ul>
             </div>
         </div>
         <div class="col-sm">
-            <div class="card" style="width: 18rem;">
-                <div class="card-header">Geeignet für</div>
+            <div class="card bg-dark mb-3" style="width: 18rem;">
+                <div class="card-header text-white">Geeignet für</div>
                 <ul class="list-group list-group-flush">
                     <li id="suited" class="list-group-item">?</li>
                 </ul>
@@ -45,16 +48,16 @@
     <!-- Output courses -->
     <div class="row">
         <div class="col-sm">
-            <div class="card" style="width: 18rem;">
-                <div id="moduleTitle" class="card-header">Hautgefühl</div>
+            <div class="card bg-dark mb-3" style="width: 18rem;">
+                <div id="moduleTitle" class="card-header text-white">Hautgefühl</div>
                 <ul class="list-group list-group-flush">
                     <li id="skin" class="list-group-item"></li>
                 </ul>
             </div>
         </div>
         <div class="col-sm">
-            <div class="card" style="width: 18rem;">
-                <div id="allgemeinTitle" class="card-header">Hauptinhaltsstoffe</div>
+            <div class="card bg-dark mb-3" style="width: 18rem;">
+                <div id="allgemeinTitle" class="card-header text-white">Hauptinhaltsstoffe</div>
                 <ul class="list-group list-group-flush">
                     <li id="ingredients" class="list-group-item"></li>
                 </ul>
@@ -67,11 +70,11 @@
     <nav aria-label="Page navigation example">
         <ul id="pagination" class="pagination">
             <li class="page-item">
-                <a class="page-link" onclick="showPrevious()" href="#">Previous</a>
+                <a style="color: #212529" class="page-link" onclick="showPrevious()" href="#">Previous</a>
             </li>
             <li class="page-item"><p class="page-link" id="showIndex"></p></li>
             <li class="page-item">
-                <a class="page-link" onclick="showNext()" href="#">Next</a>
+                <a style="color: #212529" class="page-link" onclick="showNext()" href="#">Next</a>
             </li>
         </ul>
     </nav>

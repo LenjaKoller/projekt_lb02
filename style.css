@@ -88,3 +88,8 @@ a:hover {
 .carousel-indicators li {
     background-color: rgba(3,45,56,.5);
 }
+
+
+.page-link {
+    color: #212529;
+}
