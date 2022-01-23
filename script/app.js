@@ -12,24 +12,27 @@ let produkte = undefined;
  * Ausgabe zeigen
  */
 function showUI(){
-    //Identification
+    //Produktinformation
     let htmlObj = document.getElementById("product");
     htmlObj.innerHTML =
         `Name: ${produkte.name}<br>`+
         `Grössen: ${produkte.size}<br>`+
         `Preis: ${produkte.prise}`;
+    let imgObj = document.getElementById("picture");
+    imgObj.src = produkte.picture;
 
-//Lehrbetrieb
+//Geeignet für
     htmlObj = document.getElementById("suited");
     htmlObj.innerHTML =
         `${produkte.suited}`;
 
-    //Kurse - Berufskunde
+
+    //Hautgefühl
     htmlObj = document.getElementById("skin");
     htmlObj.innerHTML =
         `${produkte.skin}`;
 
-    //Kurse - Berufskunde
+    //Hauptinhaltsstoffe
     htmlObj = document.getElementById("ingredients");
     htmlObj.innerHTML =
         `${produkte.ingredients}`;

@@ -10,18 +10,41 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
           crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body style="background-color:#fffef2">
+
+<!-- Navbar start -->
+
+<nav>
+    <a href="./index.html"><img class="logo" src="assets/logo.svg" alt="Logo"></a>
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="produkte.html">Produkte</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="news.html">News</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="team.html">Team</a>
+        </li>
+    </ul>
+</nav>
+</header>
+
+<!-- Navbar ende -->
+
 <div class="container">
     <div style="background-color: #fffef2" class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="h1">Genauere Informationen</h1>
             <p class="lead">zu unseren Produkten</p>
-            <img src="assets/produktinfo.jpg" width="100%">
         </div>
     </div>
-    </div>
+
+
+    <div class="col-sm"><img id="picture" width="100%" height="auto"/></div>
 
     <div style="margin-bottom: 3rem"></div>
     <!-- Output student and Lehrbetrieb -->
@@ -78,9 +101,7 @@
             </li>
         </ul>
     </nav>
-
 </div>
-
 
 
 <script src="script/data.js"></script>
@@ -98,4 +119,14 @@
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
 </body>
+
+<footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy;2021 AESOP</p>
+    <ul class="list-inline">
+        <li class="list-inline-item"><a href="produkte.html">Produkte</a></li>
+        <li class="list-inline-item"><a href="news.html">News</a></li>
+        <li class="list-inline-item"><a href="team.html">Team</a></li>
+    </ul>
+</footer>
+
 </html>

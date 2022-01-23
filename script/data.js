@@ -9,7 +9,8 @@ let produkteListe =
             "prise": "33 CHF",
             "suited": "Ölige Haut, Mischhaut und großporige Haut, Sommer, warme und feuchte klimatische Bedingungen",
             "skin": "Erfrischt, ausgeglichen und makellos rein",
-            "ingredients": "Mandarinenschale, Ylang-Ylang, Lavendelöl"
+            "ingredients": "Mandarinenschale, Ylang-Ylang, Lavendelöl",
+            "picture": "assets/amazing_face_cleanser.jpg",
         },
         {
             "name": "Chamomile Concentrate Anti-Blemish Masque",
@@ -17,7 +18,8 @@ let produkteListe =
             "prise": "43 CHF",
             "suited": "Unreine, gereizte Haut",
             "skin": "Geklärt, beruhigt und tiefenwirksam gereinigt",
-            "ingredients": "Kamillenknospe, Teebaumblatt, Nachtkerze"
+            "ingredients": "Kamillenknospe, Teebaumblatt, Nachtkerze",
+            "picture": "assets/chamomile_concentrate_anti-blemish_masque.jpg",
         },
         {
             "name": "Parsley Seed Anti-Oxidant Serum",
@@ -25,7 +27,8 @@ let produkteListe =
             "prise": "73 CHF",
             "suited": "Normale und empfindliche Haut sowie Mischhaut",
             "skin": "Weich und hydratisiert, mit einem mattierten Finish",
-            "ingredients": "Traubenkern, Panthenol, Petersiliensamen"
+            "ingredients": "Traubenkern, Panthenol, Petersiliensamen",
+            "picture": "assets/parsley_seed_anti-oxidant_serum.jpg",
         },
 
 
@@ -36,7 +39,8 @@ let produkteListe =
             "prise": "25 CHF",
             "suited": "Vom Friseur behandeltes, koloriertes Haar",
             "skin": "Minzig, nach Kräutern duftend, nussig",
-            "ingredients": "Mandarinenschale, Panthenol, hydrolysierter Hafer"
+            "ingredients": "Mandarinenschale, Panthenol, hydrolysierter Hafer",
+            "picture": "assets/colour_protection_shampoo.jpg",
         },
         {
             "name": "Equalising Shampoo",
@@ -44,7 +48,8 @@ let produkteListe =
             "prise": "49 CHF",
             "suited": "Fettende Haare, Menschen mit einem aktiven Lebensstil und Menschen, die in einer städtischen Umgebung leben",
             "skin": "Aromatisch-holzig, nach Kräutern duftend, frisch",
-            "ingredients": "Fenchel, Eukalyptusblatt, Mistelblatt"
+            "ingredients": "Fenchel, Eukalyptusblatt, Mistelblatt",
+            "picture": "assets/equalising_shampoo.jpg",
         },
         {
             "name": "Sage & Cedar Scalp Treatment",
@@ -52,6 +57,7 @@ let produkteListe =
             "prise": "33 CHF",
             "suited": "Reaktive, trockene und gestresste Kopfhaut",
             "skin": "Krautig, Holzig",
-            "ingredients": "Rosmarinblatt, Atlaszeder, Salbeiblatt"
+            "ingredients": "Rosmarinblatt, Atlaszeder, Salbeiblatt",
+            "picture": "assets/sage_und_cedar_scalp_treatment.jpg",
         }
     ]
