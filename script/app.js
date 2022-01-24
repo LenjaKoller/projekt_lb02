@@ -21,7 +21,7 @@ function showUI(){
     let imgObj = document.getElementById("picture");
     imgObj.src = produkte.picture;
 
-//Geeignet für
+    //Geeignet für
     htmlObj = document.getElementById("suited");
     htmlObj.innerHTML =
         `${produkte.suited}`;

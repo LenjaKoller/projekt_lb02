@@ -1,6 +1,3 @@
-const professionList = ["Applikationsentwickler", "IMS",
-    "Mediamaitker", "Recyclist", "Detailhandel", "Kaufmann"];
-
 let produkteListe =
     [
         {
