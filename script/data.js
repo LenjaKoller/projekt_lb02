@@ -1,8 +1,8 @@
 let produkteListe =
     [
         {
-            "name": "Amazing Face Cleanser",
-            "size": "1oo mL, 200 mL",
+            "name": "Amazing Cleanser",
+            "size": "10o mL, 200 mL",
             "prise": "33 CHF",
             "suited": "Ölige Haut, Mischhaut und großporige Haut, Sommer, warme und feuchte klimatische Bedingungen",
             "skin": "Erfrischt, ausgeglichen und makellos rein",
@@ -31,9 +31,9 @@ let produkteListe =
 
 
         {
-            "name": "Colour Protection Shampoo",
-            "size": "200 mL",
-            "prise": "25 CHF",
+            "name": "Protection Shampoo",
+            "size": "250 mL",
+            "prise": "30 CHF",
             "suited": "Vom Friseur behandeltes, koloriertes Haar",
             "skin": "Minzig, nach Kräutern duftend, nussig",
             "ingredients": "Mandarinenschale, Panthenol, hydrolysierter Hafer",
