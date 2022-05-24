@@ -1,8 +1,11 @@
 // read form element
 const form = document.getElementById('form');
-const name = document.getElementById('name');
+const title = document.getElementById('title');
+const surname = document.getElementById('surname');
+const firstname = document.getElementById('firstname');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
+const newsletter = document.getElementById('newsletter');
 
 // Show input error message
 function showError(input, message) {
@@ -65,8 +68,9 @@ function getFieldName(input) {
 
 // Validate form input elements
 function validateForm(){
-    if(!checkRequired([name, email, password])){
-        checkLength(name, 3, 15);
+    if(!checkRequired([title, surname, firstname, email, password, newsletter])){
+        checkLength(surname, 3, 15);
+        checkLength(firstname, 3, 15);
         checkLength(password, 6, 25);
         checkEmail(email);
     }
