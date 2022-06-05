@@ -53,8 +53,8 @@ a:hover {
     margin-right: 2em
 }
 
-.produkte {
-    margin: 2em;
+.button {
+    width: 100%;
 }
 
 .logo {
@@ -107,13 +107,13 @@ a:hover {
     width: 500px;
 }
 
-h2 {
+h4 {
     text-align: center;
-    margin: 0 0 20px;
+    margin-bottom: 30px;
 }
 
 .form {
-    padding: 30px 40px;
+    padding: 40px 40px;
 }
 
 .form-control {
@@ -121,12 +121,14 @@ h2 {
     margin-bottom: 10px;
     padding-bottom: 10px;
     position: relative;
+    border: none;
 }
 
 .form-control label {
     color: #777;
     display: block;
     margin-bottom: 5px;
+    border: none;
 }
 
 .form-control input {
@@ -161,4 +163,8 @@ h2 {
 
 .form-control.error small {
     visibility: visible;
+}
+
+.border {
+    border: none;
 }

@@ -11,7 +11,7 @@
     <title>Aesop | Skincare</title>
 </head>
 
-<body>
+<body style="background-color: #fffef2">
 <header>
     <!-- Navbar start -->
     <nav>
@@ -36,40 +36,42 @@
 <!-- Navbar ende -->
 
 <main>
-    <div class="container" style="background-color: #fffef2">
+    <div class="container">
         <form id="form" class="form">
-            <h2>Willkommen zu Aesop</h2>
-            <h2>Scheint so, als wären Sie neu bei uns. Um ein Konto zu erstellen, füllen Sie folgende Eingabefelder aus.</h2>
+            <h1 class="text-center">Willkommen zu Aesop</h1>
+            <h4>Scheint so, als wären Sie neu bei uns. Um ein Konto zu erstellen, füllen Sie folgende Eingabefelder aus.</h4>
             <div>
+                </p>
                 <p>Wie sollen wir Sie anreden?</p>
                 <p>
-                    <input type="radio" name="room" value="herr">Herr<br>
-                    <input type="radio" name="room" value="frau"checked>Frau</p>
+                    <input type="radio" name="room" value="herr" checked>&nbsp;&nbsp;Herr<br>
+                    <input type="radio" name="room" value="frau">&nbsp;&nbsp;Frau</p>
             </div>
-            <div class="form-control">
-                <label for="surname">Name</label>
-                <input type="text" id="surname" placeholder="Geben Sie Ihren Namen an" />
+            <div class="form-control border">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Geben Sie Ihren Namen an" />
                 <small>Error message</small>
             </div>
-            <div class="form-control">
-                <label for="firstname">Vorname</label>
-                <input type="text" id="firstname" placeholder="Geben Sie Ihren Vornamen an" />
+            <div class="form-control border">
+                <label for="vorname">Vorname</label>
+                <input type="text" id="vorname" placeholder="Geben Sie Ihren Vornamen an" />
                 <small>Error message</small>
             </div>
-            <div class="form-control">
+            <div class="form-control border">
                 <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Enter email" />
+                <input type="text" id="email" placeholder="Geben Sie Ihre Email an" />
                 <small>Error message</small>
             </div>
-            <div class="form-control">
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter password" />
+            <div class="form-control border">
+                <label for="passwort">Passwort</label>
+                <input type="password" id="passwort" placeholder="Geben Sie ein Passwort ein" />
                 <small>Error message</small>
             </div>
             <div class="form-control">
                 <label for="email">Geburtsdatum</label>
-                <p>
-                    Tag<br>
+                </p>
+                <div class="form-row">
+                    Tag &nbsp;
                     <select name="thema1">
                         <option value="val1">1</option>
                         <option value="val2" selected>2</option>
@@ -102,10 +104,8 @@
                         <option value="val29">29</option>
                         <option value="val30">30</option>
                         <option value="val31">31</option>
-                    </select>
-                    </select>
-                </p>
-                Monat<br>
+                    </select>&nbsp;&nbsp;
+                Monat &nbsp;
                 <select name="thema3">
                     <option value="val1">Januar</option>
                     <option value="val2" selected>Februar</option>
@@ -119,9 +119,8 @@
                     <option value="val5">Oktober</option>
                     <option value="val5">November</option>
                     <option value="val5">Dezember</option>
-                </select></select>
-                </p>
-                Jahr<br>
+                </select>&nbsp;&nbsp;
+                Jahr &nbsp;
                 <select name="thema3">
                     <option value="val1">2022</option>
                     <option value="val2" selected>2021</option>
@@ -204,23 +203,23 @@
                     <option value="val12">1944</option>
                     <option value="val12">1943</option>
                     <option value="val12">1942</option>
-                <small>Error message</small>
-                </select></select>
+                </select>&nbsp;&nbsp;
+                </div>
             </div>
             </p>
             <div>
-                <p>
-                    <input type="checkbox" name="extra" id="c1" value="message">
+                <input type="checkbox" name="extra" id="c1" value="message">
                     <label for="c1">Bestätigen Sie, um Newsletter von Aesop zu unseren Produkten und Services zu erhalten.</label>
                 </p>
             </div>
-            <button type="submit" class="btn btn-outline-dark produkte">Submit</button>
+            <button type="submit" class="btn btn-outline-dark button">Submit</button>
         </form>
 
+</div>
 </main>
 
 
-<script src="script/client-validierung.js"></script>
+<script src="script/client-validation.js"></script>
 
 <footer class="my-5 pt-5 text-muted text-center text-small">
     <p class="mb-1">&copy;2021 AESOP</p>
@@ -228,6 +227,7 @@
         <li class="list-inline-item"><a href="produkte.html">Produkte</a></li>
         <li class="list-inline-item"><a href="news.html">News</a></li>
         <li class="list-inline-item"><a href="team.html">Team</a></li>
+        <li class="list-inline-item"><a href="konto.html">Konto</a></li>
     </ul>
 </footer>
 </body>
