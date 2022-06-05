@@ -117,6 +117,7 @@ h2 {
 }
 
 .form-control {
+
     margin-bottom: 10px;
     padding-bottom: 10px;
     position: relative;
@@ -129,8 +130,7 @@ h2 {
 }
 
 .form-control input {
-    border: 2px solid #f0f0f0;
-    border-radius: 4px;
+
     display: block;
     width: 100%;
     padding: 10px;
@@ -161,17 +161,4 @@ h2 {
 
 .form-control.error small {
     visibility: visible;
-}
-
-.form button {
-    cursor: pointer;
-    background-color: #3498db;
-    border: 2px solid #3498db;
-    border-radius: 4px;
-    color: #fff;
-    display: block;
-    font-size: 16px;
-    padding: 10px;
-    margin-top: 20px;
-    width: 100%;
 }
