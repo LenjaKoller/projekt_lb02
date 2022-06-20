@@ -30,7 +30,7 @@ function checkEmail(input) {
   }
 }
 
-// Check email is valid
+// Check number is valid
 function checkNumber(input) {
   const re = /(\b(0041|0)|\B\+41)(\s?\(0\))?(\s)?[1-9]{2}(\s)?[0-9]{3}(\s)?[0-9]{2}(\s)?[0-9]{2}\b/
   if (re.test(input.value.trim())) {
