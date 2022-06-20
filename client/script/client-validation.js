@@ -45,7 +45,7 @@ function checkRequired(inputArr) {
   let isRequired = false;
   inputArr.forEach(function(input) {
     if (input.value.trim() === '') {
-      showError(input, `${getFieldName(input)} is required`);
+      showError(input, `${getFieldName(input)} ist erforderlich`);
       isRequired = true;
     } else {
       showSuccess(input);
@@ -77,7 +77,7 @@ function getFieldName(input) {
 
 // Validate form input elements
 function validateForm(){
-  if(!checkRequired([lastname, firstname, email, password])){
+  if(!checkRequired([lastname, firstname, email, password, number])){
     checkLength(lastname, 3, 15);
     checkLength(firstname, 3, 15);
     checkLength(password, 6, 25);
