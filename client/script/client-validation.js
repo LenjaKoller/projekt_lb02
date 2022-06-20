@@ -30,6 +30,16 @@ function checkEmail(input) {
   }
 }
 
+// Check email is valid
+function checkNumber(input) {
+  const re = /(\b(0041|0)|\B\+41)(\s?\(0\))?(\s)?[1-9]{2}(\s)?[0-9]{3}(\s)?[0-9]{2}(\s)?[0-9]{2}\b/
+  if (re.test(input.value.trim())) {
+    showSuccess(input);
+  } else {
+    showError(input, 'Telefonnummer ist nicht verfügbar');
+  }
+}
+
 // Check required fields
 function checkRequired(inputArr) {
   let isRequired = false;
@@ -72,6 +82,7 @@ function validateForm(){
     checkLength(firstname, 3, 15);
     checkLength(password, 6, 25);
     checkEmail(email);
+    checkNumber(number);
   }
 }
 
