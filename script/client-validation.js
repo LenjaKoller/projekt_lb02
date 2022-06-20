@@ -3,6 +3,7 @@ const form = document.getElementById('form');
 const lastname = document.getElementById('name');
 const firstname = document.getElementById('vorname');
 const email = document.getElementById('email');
+const number = document.getElementById('telefonnummer');
 const password = document.getElementById('passwort');
 
 // Show input error message
@@ -29,12 +30,22 @@ function checkEmail(input) {
   }
 }
 
+// Check number is valid
+function checkNumber(input) {
+  const re = /(\b(0041|0)|\B\+41)(\s?\(0\))?(\s)?[1-9]{2}(\s)?[0-9]{3}(\s)?[0-9]{2}(\s)?[0-9]{2}\b/
+  if (re.test(input.value.trim())) {
+    showSuccess(input);
+  } else {
+    showError(input, 'Telefonnummer ist nicht verfügbar');
+  }
+}
+
 // Check required fields
 function checkRequired(inputArr) {
   let isRequired = false;
   inputArr.forEach(function(input) {
     if (input.value.trim() === '') {
-      showError(input, `${getFieldName(input)} is required`);
+      showError(input, `${getFieldName(input)} ist erforderlich`);
       isRequired = true;
     } else {
       showSuccess(input);
@@ -70,6 +81,7 @@ function validateForm(){
     checkLength(lastname, 3, 15);
     checkLength(firstname, 3, 15);
     checkLength(password, 6, 25);
+    checkNumber(number);
     checkEmail(email);
   }
 }
@@ -79,6 +91,7 @@ function validateForm(){
 form.addEventListener('submit', function(e) {
   //https://www.w3schools.com/jsref/event_preventdefault.asp
   e.preventDefault();
+  //alert(`Ihr Konto wurde erfolgreich erstellt`)
   //First validate form
   validateForm();
 });
