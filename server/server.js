@@ -20,7 +20,7 @@ console.log(`Running at Port ${port}`);
 server.timeout = 1000 * 60 * 2; // 2 minutes
 
 //Warning: Korrekt setzen!!
-const staticPath = './12b_validation_server/03_Solutions/register-server-02/data/';
+const staticPath = './data/';
 const registrationFile = staticPath+'registration.json';
 
 
@@ -42,7 +42,6 @@ app.get('/test1', (req, res) => {
 // necessary for posting data
 // support json encoded bodies
 app.use(bodyParser.json());
-// support encoded bodies
 app.use(bodyParser.urlencoded({ extended: true }));
 
 /*  1. Writing to file
@@ -55,9 +54,10 @@ app.post('/register', (req, res) => {
     //Daten des Posts-Requests auslesen und zusätzlich eine User-id erzeugen
     let userObj = {
         "id": uuidv4(),
-        "username": req.body.user.username,
+        "name": req.body.user.name,
+        "vorname": req.body.user.vorname,
         "email": req.body.user.email,
-        "password": req.body.user.password
+        "passwort": req.body.user.passwort
     }
 
     let result = Validation.validateUser(userObj);
@@ -77,7 +77,7 @@ app.post('/register', (req, res) => {
             .catch(error => {
                 console.error(error);
             });
-        res.status(201).send(`User ${userObj.username} inserted!`);
+        res.status(201).send(`User ${userObj.name} ${userObj.vorname} inserted!`);
     }
 });
 
