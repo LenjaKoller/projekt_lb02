@@ -41,6 +41,10 @@ function validateUser(userObj) {
     result = validateLib.checkNumber("telefonnummer", userObj.telefonnummer);
     if (result.isNotValid) { return result; }
 
+    //check datum
+    result = validateLib.checkRequired("geburtsdatum", userObj.geburtsdatum);
+    if (result.isNotValid) { return result; }
+
     //all inputs are valid and isNotValid=false
     return false;
 }
