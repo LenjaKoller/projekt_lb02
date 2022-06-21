@@ -40,5 +40,40 @@
     "vorname": "lenja",
     "email": "kollerl@bzz.ch",
     "passwort": "we5hhhsmcs"
+  },
+  {
+    "id": "ad0c3876-fda3-4299-968d-60184d57d240",
+    "name": "Attinger",
+    "vorname": "Niven",
+    "email": "attingern@bzz.ch",
+    "passwort": "jasdfh28"
+  },
+  {
+    "id": "f25f76e9-bf15-477f-919f-314cbe5dc7b6",
+    "name": "Attinger",
+    "vorname": "Niven",
+    "email": "att@bzz.ch",
+    "passwort": "jasdfh28"
+  },
+  {
+    "id": "75a7b3b8-eb1f-46cc-a0ef-932b5e4b1a1e",
+    "name": "Attinger",
+    "vorname": "Niven",
+    "email": "attingerc@bzz.ch",
+    "passwort": "jasdfh28"
+  },
+  {
+    "id": "a03ab5bf-84ea-4659-99c4-c75e7865c875",
+    "name": "Attinger",
+    "vorname": "Niven",
+    "email": "attingerc@bzz.ch",
+    "passwort": "jasdfh28"
+  },
+  {
+    "id": "f5a656f9-1561-457e-ac92-98b036a4f09d",
+    "name": "Attinger",
+    "vorname": "Niven",
+    "email": "attingerc@bzz.ch",
+    "passwort": "jasdfh28"
   }
 ]

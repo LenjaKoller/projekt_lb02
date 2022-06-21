@@ -26,7 +26,24 @@ function checkEmail(id,input) {
     if (!re.test(input.trim())) {
         result = {
             isNotValid: true,
-            msg: showError(id, 'Email is not valid')
+            msg: showError(id, 'Email ist erforderlich')
+        }
+    }
+    return result;
+}
+
+// Check Number is valid
+function checkNumber(id,input) {
+    //Default: is valid
+    let result = {
+        isNotValid: false,
+        msg: showSuccess(id)
+    }
+    const re = /(\b(0041|0)|\B\+41)(\s?\(0\))?(\s)?[1-9]{2}(\s)?[0-9]{3}(\s)?[0-9]{2}(\s)?[0-9]{2}\b/
+    if (!re.test(input.trim())) {
+        result = {
+            isNotValid: true,
+            msg: showError(id, 'Nummer ist erforderlich')
         }
     }
     return result;
@@ -47,7 +64,7 @@ function checkRequired(id, input) {
         //.. then it's not valid
         result = {
             isNotValid: true,
-            msg: showError(id, `${input.toString()} is required`)
+            msg: showError(id, `${input.toString()} ist erforderlich`)
         }
     }
     //return validation result
@@ -65,13 +82,13 @@ function checkLength(id, input, min, max) {
         result = {
             isNotValid: true,
             msg: showError(id,
-                `${id} must be at least ${min} characters`)
+                `${id} Muss mindestens ${min} Zeichen haben`)
         }
     } else if (input.length > max) {
         result = {
             isNotValid: true,
             msg: showError(id,
-                `${id} must be less than ${max} characters`)
+                `${id} Muss mindestens ${max} Zeichen haben`)
         }
     }
     return result;
@@ -83,6 +100,7 @@ function checkLength(id, input, min, max) {
  */
 module.exports = {
     checkEmail,
+    checkNumber,
     checkLength,
     checkRequired
 }

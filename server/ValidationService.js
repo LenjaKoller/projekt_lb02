@@ -17,6 +17,9 @@ function validateUser(userObj) {
     result = validateLib.checkRequired("email", userObj.email);
     if (result.isNotValid) { return result; }
 
+    result = validateLib.checkRequired("telefonnummer", userObj.telefonnummer);
+    if (result.isNotValid) { return result; }
+
     result = validateLib.checkRequired("passwort", userObj.passwort);
     if (result.isNotValid) { return result; }
 
@@ -32,6 +35,10 @@ function validateUser(userObj) {
 
     //check email syntax
     result = validateLib.checkEmail("email", userObj.email);
+    if (result.isNotValid) { return result; }
+
+    //check number syntax
+    result = validateLib.checkNumber("telefonnummer", userObj.telefonnummer);
     if (result.isNotValid) { return result; }
 
     //all inputs are valid and isNotValid=false
