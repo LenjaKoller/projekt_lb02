@@ -5,6 +5,7 @@ const firstname = document.getElementById('vorname');
 const email = document.getElementById('email');
 const number = document.getElementById('telefonnummer');
 const password = document.getElementById('passwort');
+const date = document.getElementById('geburtsdatum');
 
 // Show input error message
 function showError(input, message) {
@@ -77,7 +78,7 @@ function getFieldName(input) {
 
 // Validate form input elements
 function validateForm(){
-  if(!checkRequired([lastname, firstname, email, password, number])){
+  if(!checkRequired([lastname, firstname, email, password, number, date])){
     checkLength(lastname, 3, 15);
     checkLength(firstname, 3, 15);
     checkLength(password, 6, 25);
